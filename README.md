@@ -1,7 +1,9 @@
 # explain2me
 
-This project is a Chrome extension named "explain2me" that allows users to scrape a web page for text and use a Language
-Model (LLM) to summarize the page in 250 words. The extension only works are public sites.
+This project is a Chrome extension named "explain2me" that allows users to scrape a web page for text and uses a Large
+Language Model (LLM) to summarize the page in 250 words. The extension currently only works for public sites.
+
+![image](image.png)
 
 ## Usage
 
@@ -20,7 +22,7 @@ cd EXPLAIN2ME/server
 *3.* Setup OpenAI API key
 
 Please signup and create new api key in [openAI platform](https://platform.openai.com/api-keys). Create a `.env` file
-and add/update `OPENAI_API_KEY="<your-api-key>"` in the file.
+and add `OPENAI_API_KEY="<your-api-key>"` with the updated key in the file.
 
 *4.* Install required packages and run the app
 
@@ -34,10 +36,11 @@ uvicorn main:app
 
 *5.* Add the chrome extension
 
-To use the "explain2me" Chrome extension, simply go to Chrome Extensions tab and turn on the developer mode (top right
-toggle button). Click on "Load unpacked" and navigate to the extension directory of the repo and select it. Once
-installed, you can click on the extension icon on any webpage to open the popup window. From there, the extension will
-scrape the page for text and provide a summary using the Language Model (LLM).
+* To use the "explain2me" Chrome extension, simply go to Chrome Extensions tab and turn on the developer mode (top right
+toggle button).
+* Click on "Load unpacked" and navigate to the extension directory of the repo and select it.
+* Once installed, you can click on the extension icon on any webpage to open the popup window.
+* From there, the extension will scrape the page for text and provide a summary using the Large Language Model (LLM).
 
 ## Contributing
 
