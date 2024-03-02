@@ -17,7 +17,12 @@ git clone https://github.com/tkmamidi/explain2me.git
 cd EXPLAIN2ME/server
 ```
 
-*3.* Install required packages and run the app
+*3.* Setup OpenAI API key
+
+Please signup and create new api key in [openAI platform](https://platform.openai.com/api-keys). Create a `.env` file
+and add/update `OPENAI_API_KEY="<your-api-key>"` in the file.
+
+*4.* Install required packages and run the app
 
 ```sh
 # Install packages
@@ -27,7 +32,7 @@ pip install requirements.txt
 uvicorn main:app
 ```
 
-*4.* Add the chrome extension
+*5.* Add the chrome extension
 
 To use the "explain2me" Chrome extension, simply go to Chrome Extensions tab and turn on the developer mode (top right
 toggle button). Click on "Load unpacked" and navigate to the extension directory of the repo and select it. Once
