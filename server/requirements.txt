@@ -1,0 +1,5 @@
+requests
+beautifulsoup4
+fastapi[all]
+python-dotenv
+openai

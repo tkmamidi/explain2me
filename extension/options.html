@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Explain2Me Options</title>
+  <link rel="stylesheet" type="text/css" href="options.css">
+</head>
+<body>
+  <h1>Explain2Me Options</h1>
+  <p>Customize your Explain2Me extension settings:</p>
+  <form id="options-form">
+    <label for="summary-length">Summary Length:</label>
+    <input type="number" id="summary-length" name="summary-length" min="1" max="100" value="50">
+    <br>
+    <label for="enable-highlighting">Enable Text Highlighting:</label>
+    <input type="checkbox" id="enable-highlighting" name="enable-highlighting" checked>
+    <br>
+    <button type="submit">Save</button>
+  </form>
+
+  <script src="options.js"></script>
+</body>
+</html>
