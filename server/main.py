@@ -36,7 +36,8 @@ async def scrape_url(request: URLCheckRequest):
     """
     response = requests.get(request.url)
     soup = BeautifulSoup(response.content, 'html.parser')
-    text = soup.get_text()
+    text = soup.get_text(separator=" ", strip=True)
+    text = text[:10000]
     prompt = f"""
     --------
     {text}
