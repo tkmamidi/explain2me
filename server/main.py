@@ -50,7 +50,7 @@ async def scrape_url(request: URLCheckRequest):
     completion = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "You are a research scholar whose expertise lies in analyzing text and summarizing it within 250 words."},
+            {"role": "system", "content": "You are a research scholar whose expertise lies in analyzing text and summarizing it."},
             {"role": "user", "content": prompt}
         ]
     )
