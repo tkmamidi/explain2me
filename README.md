@@ -1,7 +1,7 @@
 # explain2me
 
 This project is a Chrome extension named "explain2me" that allows users to scrape a web page for text and use a Language
-Model (LLM) to summarize the page in 250 words. The extension consists of both a client-side component and a server-side component.
+Model (LLM) to summarize the page in 250 words. The extension only works are public sites.
 
 ## Usage
 
